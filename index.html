@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Médico</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #28a745;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        header,
+        footer {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+            height: auto;
+            max-height: 2296px;
+        }
+
+        .banner,
+        .imagem-inferior,
+        .imagem-final {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            /* Altura máxima em telas maiores */
+            object-fit: cover;
+            /* Mantém o foco visual central */
+        }
+
+        .servicos {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .servicos h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .topicos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .topicos div {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .imagem-inferior,
+        .imagem-final {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            max-height: 4200px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        footer h3 {
+            margin-bottom: 1rem;
+        }
+
+        footer p,
+        footer a {
+            margin: 0.25rem 0;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        /* Em telas menores, deixa a imagem mais livre */
+        @media (max-width: 768px) {
+
+            .banner,
+            .imagem-inferior,
+            .imagem-final {
+                max-height: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header role="banner" aria-label="Logo do consultório médico">
+        <img src="/vecteezy_doctor-logo-or-medical-logo-template-or-health-care-clinic_12829544.jpg"
+            alt="Logo do Consultório Médico">
+    </header>
+
+    <main role="main" aria-label="Conteúdo principal">
+        <img class="banner" src="/vecteezy_ai-generated-medical-high-quality-background_42197761.jpg"
+            alt="Imagem representando um consultório médico moderno">
+
+        <section class="servicos" aria-labelledby="titulo-servicos">
+            <h2 id="titulo-servicos">Nossos Serviços</h2>
+            <div class="topicos">
+                <div><strong>Clínico Geral</strong></div>
+                <div><strong>Pediatria</strong></div>
+                <div><strong>Ginecologia</strong></div>
+                <div><strong>Cardiologia</strong></div>
+                <div><strong>Dermatologia</strong></div>
+                <div><strong>Exames Laboratoriais</strong></div>
+            </div>
+        </section>
+
+        <img class="imagem-inferior" src="/vecteezy_doctor-and-patient-discuss-something-sit-at-table-in_11563423.JPG"
+            alt="Equipe médica atendendo paciente">
+    </main>
+
+    <footer role="contentinfo" aria-label="Informações de contato do consultório">
+        <h3>Agende uma conversa</h3>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">+55 11
+                99999-9999</a></p>
+        <p><strong>Email:</strong> <a href="mailto:contato@consultorio.com.br">contato@consultorio.com.br</a></p>
+        <p><strong>Endereço:</strong> <a href="https://maps.app.goo.gl/9Sfd5TGVowD4XrVM8" target="_blank"
+                rel="noopener">Av. Bosque da Saúde, 546 - Vila da Saúde, São Paulo - SP, 04142-081</a></p>
+        <div style="margin-top: 1rem;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.779273359595!2d-46.63542402488938!3d-23.612247778764985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a4d21568c7d%3A0x9539050e3cc304a9!2sAv.%20Bosque%20da%20Sa%C3%BAde%2C%20546%20-%20Vila%20da%20Sa%C3%BAde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004142-081!5e0!3m2!1spt-BR!2sbr!4v1754006874913!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </footer>
+
+    <img class="imagem-final" src="/vecteezy_doctor-shaking-hands-with-patient_1384375.jpg"
+        alt="Imagem de clínica médica com ambiente acolhedor">
+
+</body>
+
+</html>
